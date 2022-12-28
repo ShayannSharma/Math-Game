@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess The Word</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body>
+
+
+
+	<center style="background: rgb(16, 3, 40); height: 100%; width:100%;">
+        <h4 id="player1_name"></h4> <span id="player1_score"></span>
+        <br>
+        <h4 id="player2_name"></h4> <span id="player2_score"></span>
+		<br>
+   <center> <h1 class="text text-danger" style="font-weight: 800; height: 100%;"> THE MATH GAME!</h1> </center>
+   <br><br><br>
+<br><br>
+   <center style="width: 50%; height: 100%"> <div class="form-control" style="height: 100%; background: rgb(246, 246, 246);">
+		<h3 id="player_question"></h3>
+		<h3 id="player_answer"></h3>
+		<div id="output" class="col-lg-6"> </div>
+        <br><br>
+		<label style="color: rgb(0, 0, 0); font-weight: bolder; font-size:20px;">Send You Numbers: 
+		</label>
+<br><br>
+		<input type="number" id="no_1" class="form-control" placeholder="First Number">
+        <br>
+        <input type="text" id="symbol" class="form-control" placeholder="Math Operator">
+		<br>
+        <input type="number" id="no_2" class="form-control" placeholder="Second Number">
+        <br>
+		<button onclick="send()" class="btn btn-success" style="width: 30%;">Send</button>
+	</center> <br><br><br><br><br><br>
+    <br><br></center>
+
+
+<script src="game_page.js"></script>
+</body>
+</html>
